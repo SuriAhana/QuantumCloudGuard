@@ -1,0 +1,13 @@
+metric_group,metric,value
+authentication,accuracy,1.0
+authentication,tpr,1.0
+authentication,tnr,1.0
+authentication,fpr,0.0
+authentication,fnr,0.0
+integrity,accuracy,1.0
+integrity,tpr,1.0
+integrity,tnr,1.0
+integrity,fpr,0.0
+integrity,fnr,0.0
+keygen,entropy,0.9980116118271721
+audit,chain_valid,1.0

@@ -1,0 +1,34 @@
+profile: paper
+cryptography:
+  aes: AES-256-GCM
+  kem: ML-KEM-768
+  kem_backend: auto
+  hash: SHA3-256
+  key_bits: 256
+  chaotic:
+    logistic_r: 3.99
+    tent_mu: 1.999
+    coupling: 0.5
+    threshold: 0.5
+    burn_in: 1000
+    candidate_bits: 8192
+recovery:
+  primary: {k: 3, n: 5}
+  additional: {k: 4, n: 7}
+cloud:
+  hosts: 20
+  pes_per_host: 8
+  ram_per_host_gb: 16
+  storage_per_host_tb: 1
+  host_bandwidth_gbps: 10
+  vms: 50
+  vcpu_per_vm: 2
+  ram_per_vm_gb: 4
+  storage_per_vm_gb: 100
+  vm_bandwidth_gbps: 1
+  scheduling: time-shared
+experiments:
+  file_sizes_mb: [10, 50, 100, 250, 500]
+  job_counts: [1000, 5000, 10000, 25000, 50000]
+  concurrent_requests: [50, 120, 250, 500, 900]
+  repetitions: 10

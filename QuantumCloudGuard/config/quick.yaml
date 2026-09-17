@@ -1,0 +1,5 @@
+profile: quick
+experiments:
+  file_sizes_mb: [1, 4, 8]
+  job_counts: [1000, 5000]
+  repetitions: 3

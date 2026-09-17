@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantumcloudguard"
+version = "1.0.0"
+description = "Reproducible implementation of the QuantumCloudGuard research framework"
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42","numpy>=1.24","pandas>=2.0","scipy>=1.10","PyYAML>=6.0"]
+
+[project.scripts]
+quantumcloudguard = "quantumcloudguard.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

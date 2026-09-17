@@ -1,0 +1,13 @@
+baseline,run,size_mb,latency_ms,pqc,recovery,audit
+AES-GCM only,0,1,1.354477000006682,False,False,False
+AES-GCM + RSA-OAEP,0,1,2.341470999994044,False,False,False
+AES-GCM + KEM,0,1,0.631206000008433,False,False,False
+Full QuantumCloudGuard,0,1,176.42716199998176,False,True,True
+AES-GCM only,1,1,0.3593129999899247,False,False,False
+AES-GCM + RSA-OAEP,1,1,1.1133499999971264,False,False,False
+AES-GCM + KEM,1,1,0.5089339999813092,False,False,False
+Full QuantumCloudGuard,1,1,174.5525540000017,False,True,True
+AES-GCM only,2,1,0.3478050000182975,False,False,False
+AES-GCM + RSA-OAEP,2,1,1.340687000009666,False,False,False
+AES-GCM + KEM,2,1,0.511056999982884,False,False,False
+Full QuantumCloudGuard,2,1,191.9729420000067,False,True,True

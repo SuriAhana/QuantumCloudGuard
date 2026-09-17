@@ -1,0 +1,3 @@
+variant,storage_latency_ms,integrity_available,recovery_available
+full,187.67045499998858,True,True
+os_rng_baseline,0.5922380000242811,False,False
