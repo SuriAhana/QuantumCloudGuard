@@ -111,28 +111,5 @@ job_id,cpu,memory,duration_ms,arrival_ms
 
 Then `quantumcloudguard.workloads.load_generic_trace()` can ingest the normalized trace. The trace is used to drive arrival/resource patterns; it is not treated as the encrypted payload itself.
 
-## 9. Manuscript-aligned experimental values
 
-`config/paper.yaml` records the locked values:
-
-- 20 hosts, 8 processing elements each;
-- 50 VMs, 2 vCPUs each;
-- 16 GB host RAM, 4 GB VM RAM;
-- 10 Gbps host and 1 Gbps VM bandwidth;
-- 10, 50, 100, 250, 500 MB files;
-- 1k, 5k, 10k, 25k, 50k jobs;
-- 50, 120, 250, 500, 900 concurrent requests;
-- 10 independent repetitions;
-- 3-of-5 and 4-of-7 Shamir configurations.
-
-## 10. Recommended publication workflow
-
-1. Install liboqs and run with `--require-pqc`.
-2. Run `pytest -q`.
-3. Run paper-profile cryptographic experiments.
-4. Use measured cryptographic timings as CloudSim overhead inputs.
-5. Run workload scaling for the locked job/concurrency levels.
-6. Run attack and threshold-recovery scenarios.
-7. Preserve generated CSV/JSON files and software versions with the manuscript.
-8. Deposit the exact code release in a DOI-assigning repository (e.g., Zenodo) for reproducibility.
 
